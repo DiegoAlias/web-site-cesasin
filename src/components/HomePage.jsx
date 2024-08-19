@@ -1,8 +1,3 @@
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
-
 import { motion, useAnimation } from "framer-motion";
 import { Parallax } from "react-parallax";
 import { useEffect, useRef } from "react";
@@ -30,6 +25,18 @@ const containerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.05,
+    },
+  },
+};
+
+const floatVariants = {
+  animate: {
+    x: [-5, 5, -5], // Se mueve 10px a la izquierda y derecha
+    y: [-5, 7, -5],
+    transition: {
+      duration: 6, // Duración total del ciclo de animación
+      repeat: Infinity, // Repetir indefinidamente
+      ease: "easeInOut",
     },
   },
 };
@@ -76,16 +83,18 @@ export const HomePage = () => {
         className="min-h-screen"
       >
         <div className="flex flex-col justify-center items-center min-h-screen home-page">
-          <img
-            className="mb-12 w-[600px] h-auto img-home"
-            src={myImage}
-            alt="clínica-cesasin"
-            data-aos="zoom-in"
-            data-aos-duration="2000"
-          />
+          <motion.div variants={floatVariants} animate="animate">
+            <img
+              src={myImage}
+              alt="clínica-cesasin"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              className="mb-12 w-[700px] h-auto"
+            />
+          </motion.div>
           <div className="container-hero">
             <motion.h1
-              className="text-4xl text-center text-blue-900 font-bold"
+              className="text-3xl text-center text-blue-900 font-medium mt-3"
               initial="hidden"
               animate={controls}
               variants={containerVariants}

@@ -2,8 +2,29 @@ html {
   scroll-behavior: smooth;
 }
 
-.home-page {
-  /* background-image: radial-gradient(circle, #c9d5ee, #c3d0ea, #bdcbe7, #b8c6e3, #b2c1e0, #a5b7dd, #98aed9, #8ba4d6, #7492d2, #5d81cd, #456fc8, #285ec2); */
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.home-page::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #9AAECE, transparent);
+  z-index: 999;
+}
+
+h1 {
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
 }
 
 .img-home {
