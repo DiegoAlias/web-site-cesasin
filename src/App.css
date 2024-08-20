@@ -57,7 +57,7 @@ h1 {
   border-color: rgba(58, 58, 58, 0.7);
 }
 
-/* HERO */
-.hero {
+/* NAVBAR */
+.navbar {
   background-image: linear-gradient(to top, #f2f5fa, #edf1f7, #e8ecf4, #e3e8f2, #dee4ef, #d6deeb, #cfd8e7, #c7d2e3, #bbc9dd, #afbfd8, #a4b6d2, #98adcd);
 }

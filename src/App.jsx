@@ -1,6 +1,11 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 import { useEffect, useState } from "react";
 import "./App.css";
-import { Hero } from "./components/Hero";
+import { Navbar } from "./components/Navbar";
 import { HomePage } from "./components/HomePage";
 import { Preloader } from "./components/Preloader";
 
@@ -28,7 +33,7 @@ function App() {
       ) : (
         <div className="fade-in">
           <HomePage />
-          <Hero />
+          <Navbar />
         </div>
       )}
     </>
