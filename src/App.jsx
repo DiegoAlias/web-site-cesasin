@@ -8,6 +8,12 @@ import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { HomePage } from "./components/HomePage";
 import { Preloader } from "./components/Preloader";
+import { Hero } from "./components/Hero";
+import { Specialties } from "./components/Specialties";
+import { ObrasSocial } from "./components/ObrasSocial";
+import { Footer } from "./components/Footer";
+import { VocationalTraining } from "./components/VocationalTraining";
+import { Contact } from "./components/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +40,12 @@ function App() {
         <div className="fade-in">
           <HomePage />
           <Navbar />
+          <Hero />
+          <Specialties />
+          <VocationalTraining />
+          <ObrasSocial />
+          <Contact />
+          <Footer />
         </div>
       )}
     </>
