@@ -31,11 +31,11 @@ const containerVariants = {
 
 const floatVariants = {
   animate: {
-    x: [-5, 5, -5], // Se mueve 10px a la izquierda y derecha
+    x: [-5, 5, -5],
     y: [-5, 7, -5],
     transition: {
-      duration: 6, // Duración total del ciclo de animación
-      repeat: Infinity, // Repetir indefinidamente
+      duration: 6,
+      repeat: Infinity,
       ease: "easeInOut",
     },
   },
@@ -45,7 +45,6 @@ export const HomePage = () => {
   const ref = useRef(null);
   const controls = useAnimation();
 
-  // Configuración de Intersection Observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -69,9 +68,6 @@ export const HomePage = () => {
     };
   }, [controls]);
 
-  const title =
-    "CENTRO DE ESTUDIOS, ASISTENCIA E INVESTIGACIÓN EN NEUROCIENCIAS";
-
   return (
     <div className="min-h-screen">
       <Cursor />
@@ -80,35 +76,56 @@ export const HomePage = () => {
         bgImage={backgroundImg}
         bgImageAlt="background"
         strength={350}
-        className="min-h-screen"
+        className="min-h-screen bg-cover bg-center"
       >
-        <div className="flex flex-col justify-center items-center min-h-screen home-page">
-          <motion.div variants={floatVariants} animate="animate">
+        <div className="flex flex-col justify-center items-center min-h-screen px-4 md:px-8 lg:px-16">
+          <motion.div
+            variants={floatVariants}
+            animate="animate"
+            className="mb-8 md:mb-12 lg:mb-16"
+          >
             <img
               src={myImage}
               alt="clínica-cesasin"
               data-aos="zoom-in"
               data-aos-duration="2000"
-              className="mb-12 w-[700px] h-auto"
+              className="w-[300px] md:w-2/3 lg:w-[600px] h-auto"
             />
           </motion.div>
           <div className="container-hero">
             <motion.h1
-              className="text-3xl text-center text-blue-900 font-medium mt-3"
+              className="text-xl md:text-3xl lg:text-4xl text-center text-blue-900 font-medium mt-3"
               initial="hidden"
               animate={controls}
               variants={containerVariants}
               ref={ref}
             >
-              {title.split("").map((letter, index) => (
-                <motion.span
-                  key={index}
-                  className="inline-block"
-                  variants={letterVariants}
-                >
-                  {letter === " " ? "\u00A0" : letter}
-                </motion.span>
-              ))}
+              <div className="flex flex-col items-center mx-5 mt-4">
+                <span className="block">
+                  {`CENTRO DE ESTUDIOS, ASISTENCIA E INVESTIGACIÓN EN`
+                    .split("")
+                    .map((letter, index) => (
+                      <motion.span
+                        key={index}
+                        className="inline-block"
+                        variants={letterVariants}
+                      >
+                        {letter === " " ? "\u00A0" : letter}
+                      </motion.span>
+                    ))}
+                </span>
+                <span className="block mt-1 md:mt-3 lg:mt-4">
+                  {`NEUROCIENCIAS`.split("").map((letter, index) => (
+                    <motion.span
+                      key={index}
+                      className="inline-block"
+                      variants={letterVariants}
+                    >
+                      {letter === " " ? "\u00A0" : letter}
+                    </motion.span>
+                  ))}
+                </span>
+              </div>
             </motion.h1>
           </div>
         </div>

@@ -23,7 +23,7 @@ html {
   width: 100%;
   height: 100px;
   background: linear-gradient(to top, #9AAECE, transparent);
-  z-index: 999;
+  z-index: 99;
 }
 
 h1 {
@@ -68,7 +68,61 @@ p {
 
 /* NAVBAR */
 .navbar {
-  background-image: linear-gradient(to top, #f2f5fa, #edf1f7, #e8ecf4, #e3e8f2, #dee4ef, #d6deeb, #cfd8e7, #c7d2e3, #bbc9dd, #afbfd8, #a4b6d2, #98adcd);
+  background: rgba(255, 253, 253, 0.856);
 }
 
-/* SPECIALTIES */
+.navbar-button-container {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.navbar-button-container.visible {
+  opacity: 1;
+}
+
+.navbar-menu {
+  z-index: 50;
+  /* Asegúrate de que el menú esté encima del overlay */
+}
+
+.navbar-overlay {
+  z-index: 40;
+  /* Asegúrate de que el overlay esté debajo del menú */
+  pointer-events: none;
+  /* Evita que el overlay bloquee los clics cuando no se muestra el menú */
+}
+
+
+
+/* WHATSAPPBUTTON */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 24px;
+  z-index: 999;
+}
+
+.whatsapp-button-container {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.whatsapp-button-container.visible {
+  opacity: 1;
+}

@@ -73,7 +73,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="space-y-3 ml-24">
+          <div className="space-y-3 ml-2 text-start sm:ml-24">
             <div className="uppercase dark:text-white font-semibold">
               Redes sociales
             </div>
