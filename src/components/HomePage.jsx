@@ -100,7 +100,7 @@ export const HomePage = () => {
               variants={containerVariants}
               ref={ref}
             >
-              <div className="flex flex-col items-center mx-5 mt-4">
+              <div className="flex flex-col items-center mx-8 mt-4">
                 <span className="block">
                   {`CENTRO DE ESTUDIOS, ASISTENCIA E INVESTIGACIÓN EN`
                     .split("")

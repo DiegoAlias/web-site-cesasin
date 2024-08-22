@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <div className="container text-center mx-auto mt-20 mb-16" id="nosotros">
+    <div className="text-center mx-4 mt-20 mb-16" id="nosotros">
       <h1 className="text-4xl text-blue-900 mb-8">
         Bienvenido a Cesasin, especialistas en trastornos de salud mental
       </h1>
