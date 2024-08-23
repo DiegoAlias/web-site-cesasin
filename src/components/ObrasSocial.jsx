@@ -1,6 +1,6 @@
 import { Parallax } from "react-parallax";
 import Tilt from "react-parallax-tilt";
-import backgroundImg2 from "/public/img/fondo2.jpg";
+import backgroundImg2 from "/public/img/fondo4.jpg";
 import backgroundImg3 from "/public/img/fondo3.jpg";
 import galeno from "/public/img/galeno.jpeg";
 import medife from "/public/img/medife.png";
@@ -19,9 +19,9 @@ export const ObrasSocial = () => {
         className="min-h-screen"
       >
         <div className="container relative px-4 pb-8 pl-4 sm:pl-12 my-10">
-          <h1 className="text-2xl sm:text-3xl text-gray-900 mb-4 text-center sm:text-left">
+          <h2 className="text-2xl sm:text-3xl text-gray-900 mb-4 text-center sm:text-left">
             OBRA SOCIALES Y PREPAGAS
-          </h1>
+          </h2>
 
           <div className="flex flex-col sm:flex-row">
             {/* Componente Tilt para el efecto de movimiento hacia el puntero */}
@@ -44,34 +44,33 @@ export const ObrasSocial = () => {
             </Tilt>
 
             <div className="mt-8 sm:ml-8 items-center px-6 sm:w-1/2">
-              {/* Contenedor Flex para las imágenes */}
-              <div className="grid grid-cols-2 gap-4 mt-4">
+              {/* Contenedor Flex para alinear las imágenes en una fila */}
+              <div className="flex flex-wrap justify-center gap-4 mt-4">
                 <img
                   src={galeno}
                   alt="Galeno"
-                  className="w-auto h-24 rounded-lg shadow-lg sm:flex mx-auto"
+                  className="w-auto h-24 rounded-lg shadow-lg"
                   data-aos="fade-down-left"
                   data-aos-duration="2500"
                 />
                 <img
                   src={medife}
                   alt="Medife"
-                  className="w-auto h-24 rounded-lg shadow-lg sm:flex mx-auto"
+                  className="w-auto h-24 rounded-lg shadow-lg"
                   data-aos="fade-down-left"
                   data-aos-duration="2500"
                 />
                 <img
                   src={ospe}
                   alt="OSPE"
-                  className="w-auto h-24 rounded-lg shadow-lg sm:flex mx-auto"
+                  className="w-auto h-24 rounded-lg shadow-lg"
                   data-aos="fade-down-left"
                   data-aos-duration="2500"
                 />
-
                 <img
                   src={prevencionART}
                   alt="Prevención ART"
-                  className="w-24  h-26 rounded-lg shadow-lg sm:flex mx-auto"
+                  className="w-auto h-24 rounded-lg shadow-lg"
                   data-aos="fade-down-left"
                   data-aos-duration="3000"
                 />

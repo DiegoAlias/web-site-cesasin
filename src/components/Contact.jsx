@@ -3,9 +3,9 @@ export const Contact = () => {
     <section className="pt-20 pb-10 bg-gray-400" id="contacto">
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
-          <h1 className=" text-center text-3xl mb-8 font-semibold sm:text-start sm:font-normal text-gray-900">
+          <h2 className=" text-center text-3xl mb-8 font-semibold sm:text-start sm:font-normal text-gray-900">
             CONTACTO
-          </h1>
+          </h2>
           <p className="pt-2 pb-4">
             Queremos ayudarte Puedes contactar con nosotros:
           </p>

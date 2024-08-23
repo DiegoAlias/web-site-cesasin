@@ -1,5 +1,5 @@
 import { Parallax } from "react-parallax";
-import backgroundImg2 from "/public/img/fondo2.jpg";
+import backgroundImg2 from "/public/img/fondo4.jpg";
 
 export const Specialties = () => {
   return (
@@ -12,36 +12,50 @@ export const Specialties = () => {
         className="min-h-screen"
       >
         <div className="container relative pb-8 pl-4 md:pl-12 my-10">
-          <h1 className="text-center text-2xl md:text-3xl text-gray-900 mb-4 md:text-start">
+          <h2 className="text-center text-2xl md:text-3xl text-gray-900 mb-4 md:text-start">
             ESPECIALIDADES
-          </h1>
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          </h2>
+          <div className="flex flex-col font-medium justify-center items-center md:flex-row md:justify-start">
             <ul
-              className="list-disc pl-6 md:pl-12 py-6 bg-teal-700 text-white font-medium rounded-lg mb-4 w-full md:w-1/2 relative bg-ul-specialties"
-              data-aos="fade-right"
+              className="list-none w-full pr-3 md:w-1/2 space-y-4"
+              data-aos="fade-left"
               data-aos-duration="2500"
             >
-              <div
-                className="space-y-2"
-                data-aos="fade-down-right"
-                data-aos-duration="3000"
-              >
-                <li>Trastornos de Conducta Alimentaria (TCA)</li>
-                <li>
-                  Abordajes de los diferentes trastornos que afectan al
-                  psiquismo
-                </li>
-                <li>Trastornos de Conducta - TC</li>
-                <li>Trastornos de Personalidad (TP)</li>
-                <li>Trastorno Límite de la Personalidad - TLP</li>
-                <li>Trastornos del Neurodesarrollo</li>
-                <li>Reeducaciones Psicopedagógicas</li>
-                <li>Unidad de Psiquiatría General - UPG</li>
-                <li>Ansiedad</li>
-                <li>Adicciones y Patología Dual</li>
-                <li>Adicciones Tecnológicas</li>
-                <li>Unidad de Terapia Familiar</li>
-                <li>Unidad de Salud Mental del Adolescente (USMA)</li>
+              <div>
+                <div
+                  className="space-y-2 bg-teal-600 rounded-r-2xl py-2 px-4 text-white"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                >
+                  <li>Trastornos de Conducta Alimentaria (TCA)</li>
+                  <li>
+                    Abordajes de los diferentes trastornos que afectan al
+                    psiquismo
+                  </li>
+                  <li>Trastornos de Conducta - TC</li>
+                  <li>Trastornos de Personalidad (TP)</li>
+                  <li>Trastorno Límite de la Personalidad - TLP</li>
+                </div>
+                <div
+                  className="space-y-2 mt-4 bg-violet-700 rounded-r-2xl py-2 px-4 text-white"
+                  data-aos="zoom-in"
+                  data-aos-duration="3000"
+                >
+                  <li>Trastornos del Neurodesarrollo</li>
+                  <li>Reeducaciones Psicopedagógicas</li>
+                  <li>Unidad de Psiquiatría General - UPG</li>
+                </div>
+                <div
+                  className="space-y-2 mt-4 bg-teal-600 rounded-r-2xl py-2 px-4 text-white"
+                  data-aos="fade-up-left"
+                  data-aos-duration="3000"
+                >
+                  <li>Ansiedad</li>
+                  <li>Adicciones y Patología Dual</li>
+                  <li>Adicciones Tecnológicas</li>
+                  <li>Unidad de Terapia Familiar</li>
+                  <li>Unidad de Salud Mental del Adolescente (USMA)</li>
+                </div>
               </div>
             </ul>
             <div

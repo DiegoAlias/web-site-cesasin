@@ -31,6 +31,16 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 p {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;

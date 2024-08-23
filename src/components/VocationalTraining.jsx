@@ -1,12 +1,12 @@
 export const VocationalTraining = () => {
   return (
     <section
-      className="pt-14 pb-10 dark:bg-gray-100 dark:text-gray-800"
+      className="pt-8 pb-2 dark:bg-gray-100 dark:text-gray-800"
       id="formacion"
     >
-      <h1 className="text-2xl sm:text-3xl leading-none sm:ml-12 text-center sm:text-left">
+      <h2 className="text-2xl sm:text-3xl leading-none sm:ml-12 text-center sm:text-left">
         FORMACIÓN PROFESIONAL
-      </h1>
+      </h2>
       <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
         <p className="max-w-2xl text-center dark:text-gray-900">
           En Cesasin lo importante eres tú, por eso nuestros equipos están
