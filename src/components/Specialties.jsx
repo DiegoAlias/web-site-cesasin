@@ -3,13 +3,13 @@ import backgroundImg2 from "/public/img/fondo4.jpg";
 
 export const Specialties = () => {
   return (
-    <div className="min-h-screen home-page" id="especialidades">
+    <div id="especialidades">
       <Parallax
         blur={0}
         bgImage={backgroundImg2}
         bgImageAlt="background"
         strength={350}
-        className="min-h-screen"
+        className="py-2"
       >
         <div className="container relative pb-8 pl-4 md:pl-12 my-10">
           <h2 className="text-center text-2xl md:text-3xl text-gray-900 mb-4 md:text-start">
@@ -63,7 +63,7 @@ export const Specialties = () => {
               data-aos="zoom-in"
               data-aos-duration="2500"
             >
-              <button className="text-white italic text-lg md:text-xl font-semibold border-4 border-violet-700 bg-violet-700 px-4 py-2 md:py-1 rounded-md hover:bg-violet-700 hover:scale-110 duration-300">
+              <button className="text-white italic text-lg md:text-2xl font-semibold border-4 border-violet-700 bg-violet-700 px-4 py-2 md:py-1 rounded-md hover:bg-violet-700 hover:scale-110 duration-300">
                 Más información
               </button>
             </div>

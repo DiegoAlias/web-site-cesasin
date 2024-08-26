@@ -46,7 +46,7 @@ export const Navbar = ({ isVisible }) => {
         className="fixed top-4 right-4 z-50 flex items-center space-x-2 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 hover:scale-110 duration-300"
       >
         <span>Menú</span>
-        {showMenu ? <HiX size={24} /> : <HiMenu size={24} />}
+        {showMenu ? <HiX size={24} /> : <HiMenu size={34} />}
       </button>
 
       {/* Navbar */}

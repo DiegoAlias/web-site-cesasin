@@ -10,15 +10,15 @@ import provinciaART from "/public/img/provinciaART.png";
 
 export const ObrasSocial = () => {
   return (
-    <div className="min-h-screen home-page" id="servicios">
+    <div id="servicios">
       <Parallax
         blur={0}
         bgImage={backgroundImg2}
         bgImageAlt="background"
         strength={350}
-        className="min-h-screen"
+        className="py-12"
       >
-        <div className="container relative px-4 pb-8 pl-4 sm:pl-12 my-10">
+        <div className="container relative px-4 pb-8 pl-4 sm:pl-12 mt-10">
           <h2 className="text-2xl sm:text-3xl text-gray-900 mb-4 text-center sm:text-left">
             OBRA SOCIALES Y PREPAGAS
           </h2>
@@ -43,7 +43,7 @@ export const ObrasSocial = () => {
               />
             </Tilt>
 
-            <div className="mt-8 sm:ml-8 items-center px-6 sm:w-1/2">
+            <div className="mt-16 sm:ml-8 items-center px-6 sm:w-1/2">
               {/* Contenedor Flex para alinear las imágenes en una fila */}
               <div className="flex flex-wrap justify-center gap-4 mt-4">
                 <img
